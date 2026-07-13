@@ -1,48 +1,48 @@
 make a privesc page about statuslines when home
 
-![[Pasted image 20260713112710.png]]
+<img width="862" height="309" alt="image" src="https://github.com/user-attachments/assets/9980cbf3-d9d4-4b31-bb54-27b0343f6b90" />
+
 - just ssh and redis 4.0.14
 
 found [this](https://github.com/n0b0dyCN/redis-rogue-server) GitHub link for Redis 4.x RCE
-![[Pasted image 20260713113643.png]]
+<img width="823" height="512" alt="image" src="https://github.com/user-attachments/assets/8051e4fa-3c5e-4d20-a53a-53789cbd32b6" />
+
 - did reverse instead of more stability
 
 put my ssh key in there and connected directly
-![[Pasted image 20260713113957.png]]
+<img width="730" height="744" alt="image" src="https://github.com/user-attachments/assets/cfd77b5e-83a8-4a2e-8cd2-f958a83c63a5" />
+
 
 for proof
-![[Pasted image 20260713114032.png]]
+<img width="138" height="92" alt="image" src="https://github.com/user-attachments/assets/b69dfd4c-aaeb-4deb-aadc-022f059ef3e8" />
 
 
-![[Pasted image 20260713114046.png]]
+
+<img width="452" height="107" alt="image" src="https://github.com/user-attachments/assets/57ec2ae8-1e3f-409f-8558-7aac127f1716" />
+
 - notes file in prudence home directory
 	- protected mode is off
 
-sudo version 1.9.1
-![[Pasted image 20260713114238.png]]
 
-![[Pasted image 20260713114349.png]]
+<img width="854" height="173" alt="image" src="https://github.com/user-attachments/assets/bcc5f7f2-83f5-4366-a6ee-81acebfb82ee" />
+
 - can run redis as sudo
 
 
 need an authorization key to use redis-status
-![[Pasted image 20260713114636.png]]
+<img width="256" height="96" alt="image" src="https://github.com/user-attachments/assets/88bdb8cb-8937-4db9-9605-d4ab3db9b39f" />
 
-![[Pasted image 20260713115819.png]]
-- maybe?
-
-
-![[Pasted image 20260713115847.png]]
-- another yellow
 
 running strings on the binary gives the authorization key
-![[Pasted image 20260713133324.png]]
+<img width="642" height="331" alt="image" src="https://github.com/user-attachments/assets/e69050ce-ac45-47ef-ab18-4f93d3af32c4" />
+
 ```
 ClimbingParrotKickingDonkey321
 ```
 
 
 once in, type `!/bin/bash` to get root
-![[Pasted image 20260713135505.png]]
-![[Pasted image 20260713135552.png]]
+<img width="500" height="126" alt="image" src="https://github.com/user-attachments/assets/e0166e8b-df7b-4282-a00b-f57115c04a93" />
+<img width="370" height="92" alt="image" src="https://github.com/user-attachments/assets/22400baa-0d51-4618-85e2-57bb28799675" />
+
 
